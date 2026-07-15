@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadi — Civil Engineering, GIS &amp; Water Resources Research</title>
+<meta name="description" content="Hadi is a Civil Engineering student at RUET working across GIS, remote sensing, and machine learning to study urban heat, river water quality, and land-use change in Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hadi<span class="dot">.</span><span class="tag">civil / gis / water</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="inspiration.html">Inspiration</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="crop-mark tl"></div>
+  <div class="crop-mark tr"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="location mono">Rajshahi, Bangladesh — Civil Engineering / GIS / Water Resources</span>
+      <h1>I map how <em>cities heat</em>, rivers change, and land shifts.</h1>
+      <p class="lede">Civil engineering student at RUET blending GIS, remote sensing, and machine learning to study urban heat, river water quality, and land-use change across Bangladesh — building the evidence behind climate-resilient planning.</p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View projects <span class="btn-arrow">→</span></a>
+        <a href="mailto:your.email@example.com" class="btn btn-ghost">Get in touch <span class="btn-arrow">↗</span></a>
+      </div>
+      <p class="hero-coords">Currently — RUET, Civil Engineering (22 Series) · Member, ACES</p>
+    </div>
+    <div class="hero-art reveal" data-coord-zone>
+      <svg class="contour-svg" viewBox="0 0 480 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path class="contour-line l2" d="M-10,50 C60,20 110,70 180,42 C250,15 305,60 385,35 C425,22 455,30 490,25" />
+        <path class="contour-line l1" d="M-10,120 C60,80 120,150 190,110 C260,70 320,130 400,95 C440,78 460,90 490,80" />
+        <path class="contour-line l2" d="M-10,180 C70,150 130,210 200,175 C270,140 330,195 410,165 C445,150 465,158 490,150" />
+        <path class="contour-line l3" d="M-10,250 C80,220 140,280 210,245 C280,210 340,265 420,235 C450,222 470,228 490,222" />
+        <path class="contour-line l1" d="M-10,320 C70,300 130,350 200,318 C270,285 335,335 415,305 C448,292 468,298 490,292" />
+        <path class="contour-line l4" d="M-10,385 C75,360 135,415 205,382 C275,350 340,400 420,372 C452,360 470,365 490,360" />
+        <path class="contour-line l5" d="M-10,450 C80,425 140,478 215,448 C285,418 345,462 425,438 C455,428 472,432 490,428" />
+        <circle class="sample-point" cx="190" cy="110" r="3.5" />
+        <circle class="sample-point alt" cx="270" cy="210" r="3.5" />
+        <circle class="sample-point" cx="340" cy="335" r="3.5" />
+        <circle class="sample-point alt" cx="205" cy="382" r="3.5" />
+        <text class="sample-label" x="198" y="104">LST</text>
+        <text class="sample-label" x="278" y="204">NDVI</text>
+        <text class="sample-label" x="348" y="329">LULC</text>
+        <text class="sample-label" x="213" y="399">WQ</text>
+      </svg>
+      <div class="coord-readout-box mono"><span class="dot"></span><span data-coord-readout>24.3745°N / 88.6042°E</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- STATS -->
+<section class="stat-strip">
+  <div class="wrap stat-grid">
+    <div class="stat-item reveal">
+      <div class="num">05</div>
+      <div class="label">Cities in the UHI / SUHI study</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="num">24yr</div>
+      <div class="label">Of LULC change mapped, 2000–2024</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="num">2035</div>
+      <div class="label">Projection horizon for land-use simulation</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="num">03</div>
+      <div class="label">Research manuscripts in progress</div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section class="block">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">selected-work</span>
+      <h2>Three studies, one question: what does the data say before the water rises?</h2>
+    </div>
+    <div class="card-grid">
+      <article class="card reveal">
+        <div class="card-top"><span>P.01</span><span>GEE · Landsat</span></div>
+        <h3>Urban Heat Island &amp; SUHI</h3>
+        <p>Mono-window LST retrieval across five Bangladeshi cities, correlated against NDVI, NDBI, and NDWI to explain where — and why — cities run hottest.</p>
+        <div class="tags">
+          <span class="tag blue">Remote Sensing</span>
+          <span class="tag teal">Python</span>
+        </div>
+        <a href="projects.html#uhi-suhi" class="card-link">View project <span class="a">↗</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="card-top"><span>P.02</span><span>Random Forest</span></div>
+        <h3>LULC Change &amp; CA-Markov 2035</h3>
+        <p>Twenty-four years of land-use change across Rajshahi Division, classified in GEE and projected to 2035 with a CA-Markov model.</p>
+        <div class="tags">
+          <span class="tag amber">Land Use</span>
+          <span class="tag teal">ML</span>
+        </div>
+        <a href="projects.html#lulc-camarkov" class="card-link">View project <span class="a">↗</span></a>
+      </article>
+      <article class="card reveal">
+        <div class="card-top"><span>P.03</span><span>PMF · Monte Carlo</span></div>
+        <h3>Padma River Water Quality</h3>
+        <p>Source apportionment and a probabilistic health risk assessment — THQ, HI, CR — for the Padma River.</p>
+        <div class="tags">
+          <span class="tag rust">Water Quality</span>
+          <span class="tag blue">Risk Assessment</span>
+        </div>
+        <a href="projects.html#padma-water-quality" class="card-link">View project <span class="a">↗</span></a>
+      </article>
+    </div>
+    <p class="mt-lg"><a href="projects.html" class="btn btn-ghost">All projects <span class="btn-arrow">→</span></a></p>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section class="block tight bg-alt">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-bottom:2rem;">
+      <span class="eyebrow">toolkit</span>
+      <h2>What I build with.</h2>
+    </div>
+    <div class="tool-strip reveal">
+      <span class="tool-chip">QGIS</span>
+      <span class="tool-chip">ArcGIS Pro</span>
+      <span class="tool-chip">Google Earth Engine</span>
+      <span class="tool-chip">Python</span>
+      <span class="tool-chip">scikit-learn</span>
+      <span class="tool-chip">TensorFlow / Keras</span>
+      <span class="tool-chip">HEC-RAS</span>
+      <span class="tool-chip">AutoCAD</span>
+      <span class="tool-chip">ETABS</span>
+      <span class="tool-chip">SAP2000</span>
+      <span class="tool-chip">DaVinci Resolve</span>
+    </div>
+  </div>
+</section>
+
+<!-- ACES / BEYOND RESEARCH -->
+<section class="block">
+  <div class="wrap split-2 align-c">
+    <div class="reveal">
+      <span class="eyebrow">beyond-research</span>
+      <h2>Teaching the next batch of drafters.</h2>
+    </div>
+    <div class="reveal">
+      <p class="lede">I'm an active member of ACES — the Alliance of Civil Engineering Students — where I help teach AutoCAD to junior students and support practical, software-focused training events for the department. Explaining a workflow to someone else is usually the fastest way to find out if I actually understand it.</p>
+      <p class="mt-lg" style="margin-top:1.5rem;"><a href="about.html#involvement" class="card-link">More about my involvement <span class="a">↗</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="block bg-ink" id="getintouch">
+  <div class="wrap contact-block">
+    <div class="reveal">
+      <span class="eyebrow">contact</span>
+      <h2>Let's map something together.</h2>
+      <p class="lede" style="margin-top:1rem;">Open to research collaboration, graduate opportunities in water resources, environmental engineering, or geospatial technology, and conversations about GIS-driven work in Bangladesh.</p>
+    </div>
+    <div class="contact-links reveal">
+      <a href="mailto:your.email@example.com">Email <span>↗</span></a>
+      <a href="#">LinkedIn <span>↗</span></a>
+      <a href="#">GitHub <span>↗</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Hadi</h4>
+        <p style="margin-top:0.6rem; max-width:32ch;">Civil engineering student mapping heat, water, and land change across Bangladesh with GIS, remote sensing, and machine learning.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:your.email@example.com">Email</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Based in</h4>
+        <p>Rajshahi, Bangladesh<br>24.3745°N / 88.6042°E</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Hadi. Built with intent, mapped with care.</span>
+      <span>RUET · Civil Engineering · 22 Series</span>
+    </div>
+  </div>
+</footer>
+
+<div class="geo-stamp mono"><span class="crosshair">✛</span> RAJSHAHI, BD — 24.3745°N / 88.6042°E</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

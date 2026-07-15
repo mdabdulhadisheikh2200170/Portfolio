@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Hadi</title>
+<meta name="description" content="Research and builds spanning urban heat islands, land-use change, river water quality, and flood prediction — GIS, remote sensing, and machine learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Primary">
+  <div class="wrap">
+    <a href="index.html" class="brand">Hadi<span class="dot">.</span><span class="tag">civil / gis / water</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="inspiration.html">Inspiration</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="crop-mark tl"></div>
+  <div class="crop-mark tr"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">projects</span>
+    <h1 class="reveal" style="max-width:20ch;">Research &amp; builds.</h1>
+    <p class="lede reveal">Studies in progress and shipped, spanning urban heat, water quality, land-use change, and flood prediction — most of it built on Google Earth Engine, Python, and HEC-RAS.</p>
+  </div>
+</header>
+
+<section class="block tight">
+  <div class="wrap">
+    <div class="project-list">
+
+      <article class="project-row reveal" id="uhi-suhi">
+        <div class="idx">P.01</div>
+        <div>
+          <span class="tag blue status-tag">Targeting ICACE-2026 · Springer</span>
+          <h3>Urban Heat Island &amp; Surface Urban Heat Island Across Five Bangladeshi Cities</h3>
+          <span class="meta mono">Google Earth Engine · Landsat 8/9 · Mono-window algorithm</span>
+          <p>Retrieves land surface temperature for Dhaka, Chattogram, Khulna, Sylhet, and Rajshahi using the mono-window algorithm, then correlates LST against NDVI, NDBI, and NDWI to explain which land-cover patterns run hottest, and why. Being developed into a conference paper for ICACE-2026.</p>
+          <div class="tags">
+            <span class="tag blue">Remote Sensing</span>
+            <span class="tag teal">Python</span>
+            <span class="tag amber">Correlation Analysis</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" id="lulc-camarkov">
+        <div class="idx">P.02</div>
+        <div>
+          <span class="tag amber status-tag">Manuscript in preparation</span>
+          <h3>Spatiotemporal LULC Change &amp; CA-Markov Simulation — Rajshahi Division</h3>
+          <span class="meta mono">Random Forest · Google Earth Engine · 2000–2035</span>
+          <p>Classifies 24 years of land-use and land-cover change (2000–2024) across Rajshahi Division using a Random Forest classifier in GEE, then projects a 2035 scenario with a CA-Markov model to see where urban growth is headed next.</p>
+          <div class="tags">
+            <span class="tag amber">Land Use Change</span>
+            <span class="tag teal">Random Forest</span>
+            <span class="tag blue">CA-Markov</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" id="padma-water-quality">
+        <div class="idx">P.03</div>
+        <div>
+          <span class="tag rust status-tag">In progress</span>
+          <h3>Padma River Water Quality — Source Apportionment &amp; Health Risk</h3>
+          <span class="meta mono">PMF Receptor Modeling · Monte Carlo Simulation</span>
+          <p>Combines positive matrix factorization (PMF) for source apportionment with a Monte Carlo probabilistic health risk assessment — target hazard quotient, hazard index, and cancer risk — to characterize water-quality risk along the Padma River.</p>
+          <div class="tags">
+            <span class="tag rust">Water Quality</span>
+            <span class="tag blue">PMF</span>
+            <span class="tag teal">THQ / HI / CR</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" id="flood-depth-ml">
+        <div class="idx">P.04</div>
+        <div>
+          <span class="tag teal status-tag">Research design stage</span>
+          <h3>ML-Based Flood Depth Prediction from HEC-RAS Datasets</h3>
+          <span class="meta mono">HEC-RAS · CNN–LSTM / GRU · Satellite Imagery + DEM</span>
+          <p>Trains CNN-LSTM/GRU architectures on HEC-RAS-generated flood datasets, satellite imagery, DEM data, and hydrological time series, aiming to approximate flood depth far faster than re-running a full hydraulic simulation each time.</p>
+          <div class="tags">
+            <span class="tag teal">Deep Learning</span>
+            <span class="tag rust">Flood Modeling</span>
+            <span class="tag blue">Remote Sensing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" id="gnn-fluvial">
+        <div class="idx">P.05</div>
+        <div>
+          <span class="tag amber status-tag">Feasibility &amp; gap analysis</span>
+          <h3>GNN-Based Urban Fluvial Flow Simulation</h3>
+          <span class="meta mono">Graph Neural Networks · Literature Review</span>
+          <p>Explores graph neural networks as a faster surrogate for urban fluvial flow simulation, with a detailed feasibility assessment and literature-gap analysis aimed at Q1 hydrology journals.</p>
+          <div class="tags">
+            <span class="tag amber">GNN</span>
+            <span class="tag rust">Hydraulic Modeling</span>
+            <span class="tag teal">Literature Review</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reveal" id="ai-usage-study">
+        <div class="idx">P.06</div>
+        <div>
+          <span class="tag blue status-tag">Completed</span>
+          <h3>AI Usage Among Bangladeshi University Students</h3>
+          <span class="meta mono">Kaggle Dataset · Statistical Analysis</span>
+          <p>A survey-based study on how Bangladeshi university students use AI tools, built on a Kaggle dataset and analyzed for patterns across discipline, frequency, and purpose of use.</p>
+          <div class="tags">
+            <span class="tag blue">Data Analysis</span>
+            <span class="tag teal">Python</span>
+            <span class="tag amber">Survey Research</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="block bg-alt">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">side-builds</span>
+      <h2>Small tools, built for a specific itch.</h2>
+    </div>
+    <div class="card-grid cols-2">
+      <article class="card reveal">
+        <div class="card-top"><span>Front-end</span><span>HTML / React</span></div>
+        <h3>Prompt Template Generator</h3>
+        <p>An interactive tool for building, saving, and reusing structured prompt templates without rewriting boilerplate every time.</p>
+        <div class="tags">
+          <span class="tag blue">React</span>
+          <span class="tag teal">UI Tooling</span>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="card-top"><span>Front-end</span><span>HTML / React</span></div>
+        <h3>Image Prompt Studio</h3>
+        <p>A front-end workspace for composing, tweaking, and organizing image-generation prompts side by side.</p>
+        <div class="tags">
+          <span class="tag blue">React</span>
+          <span class="tag amber">UI Tooling</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Hadi</h4>
+        <p style="margin-top:0.6rem; max-width:32ch;">Civil engineering student mapping heat, water, and land change across Bangladesh with GIS, remote sensing, and machine learning.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:your.email@example.com">Email</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Based in</h4>
+        <p>Rajshahi, Bangladesh<br>24.3745°N / 88.6042°E</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Hadi. Built with intent, mapped with care.</span>
+      <span>RUET · Civil Engineering · 22 Series</span>
+    </div>
+  </div>
+</footer>
+
+<div class="geo-stamp mono"><span class="crosshair">✛</span> RAJSHAHI, BD — 24.3745°N / 88.6042°E</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
